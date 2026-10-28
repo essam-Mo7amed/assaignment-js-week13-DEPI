@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Student Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>Smart Student Portal</h1>
+        <p>Your academic journey starts here!</p>
+    </header>
+
+    <main class="container">
+
+        <section class="registration-section">
+
+            <h2>Student Registration</h2>
+
+            <p class="section-description">
+                Enter your information to register in the student portal.
+            </p>
+
+            <form id="registrationForm">
+
+                <div class="form-group">
+                    <label for="studentName">Student Full Name</label>
+                    <input
+                        type="text"
+                        id="studentName"
+                        placeholder="Enter your full name"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="studentId">Student ID</label>
+                    <input
+                        type="text"
+                        id="studentId"
+                        placeholder="Enter your student ID"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="studentAge">Age</label>
+                    <input
+                        type="number"
+                        id="studentAge"
+                        placeholder="Enter your age"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="studentEmail">Email Address</label>
+                    <input
+                        type="email"
+                        id="studentEmail"
+                        placeholder="Enter your email"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="studentTrack">Choose Your Track</label>
+
+                    <select id="studentTrack">
+                        <option value="">Select a track</option>
+                        <option value="Frontend">Frontend Development</option>
+                        <option value="Backend">Backend Development</option>
+                        <option value="Mobile">Mobile Development</option>
+                    </select>
+                </div>
+
+                <h3>Subject Marks</h3>
+
+                <div class="form-group">
+                    <label for="subject1">Subject 1</label>
+                    <input
+                        type="number"
+                        id="subject1"
+                        placeholder="Enter mark out of 100"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="subject2">Subject 2</label>
+                    <input
+                        type="number"
+                        id="subject2"
+                        placeholder="Enter mark out of 100"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="subject3">Subject 3</label>
+                    <input
+                        type="number"
+                        id="subject3"
+                        placeholder="Enter mark out of 100"
+                    >
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    Register Student
+                </button>
+
+            </form>
+
+            <div id="registrationMessage" class="message" aria-live="polite"></div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

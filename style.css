@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #3157d5;
+    --primary-hover: #2443ad;
+    --background-color: #f4f6fb;
+    --card-color: #ffffff;
+    --text-color: #202b45;
+    --muted-color: #68738a;
+    --border-color: #dce2ee;
+    --success-color: #16834a;
+    --error-color: #d93025;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.header p {
+    font-size: 16px;
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    margin: 40px auto;
+}
+
+.registration-section {
+    background-color: var(--card-color);
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.registration-section h2 {
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.section-description {
+    color: var(--muted-color);
+    margin-bottom: 25px;
+}
+
+.registration-section h3 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 7px;
+    font-size: 15px;
+    background-color: white;
+    color: var(--text-color);
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(49, 87, 213, 0.12);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 13px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 7px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: var(--primary-hover);
+}
+
+.submit-btn:active {
+    transform: scale(0.99);
+}
+
+.message {
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 7px;
+    display: none;
+}
+
+.message.success {
+    display: block;
+    color: var(--success-color);
+    background-color: #e8f7ee;
+    border: 1px solid #b9e5c9;
+}
+
+.message.error {
+    display: block;
+    color: var(--error-color);
+    background-color: #fff0ef;
+    border: 1px solid #f5c3bf;
+}
+
+
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 25px;
+    }
+
+    .container {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    .registration-section {
+        padding: 20px;
+    }
+}
